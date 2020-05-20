@@ -1,5 +1,5 @@
 # Glouton Monetaire
-- rendre la monnaie avec le minimum de pièces possibles parmi une liste
+- rendre la monnaie avec le minimum de pièces possibles parmi une liste (illimitée)
 - optimal -> algorithme fonctionnel avec les pièces disponibles du modèle Européen par exemple
 - non optimal -> des pièces avec des valeurs différentes
 

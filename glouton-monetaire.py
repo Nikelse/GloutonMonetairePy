@@ -1,31 +1,13 @@
-# Algorithme glouton de résolution de monnaie à rendre
-# A CORRIGER
-# NF.NSI
+unites = {0 : " ", 1: "I" , 2 : "II" , 3 : "III" , 4 : "IV" , 5 : "V" , 6 : "VI" , 7 : "VII" , 8 : "VIII" , 9 : "IX" }
+dizaines = {0 : " ", 1: "X" , 2 : "XX" , 3 : "XXX" , 4 : "XL" , 5 : "L" , 6 : "LX" , 7 : "LXX" , 8 : "LXXX" , 9 : "XC" }
+centaines = {0 : " ", 1: "C" , 2 : "CC" , 3 : "CCC" , 4 : "CD" , 5 : "D" , 6 : "DC" , 7 : "DCC" , 8 : "DCCC" , 9 : "CM" }
 
-# montant de la monnaie a rendre
-montant = 1.65
 
-# valeur des pieces disponibles en euro trié dans l'ordre croissant
-pieces = [ 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01 ]
+def conversion_en_chiffres_romains () :
+    x = int(input("Quel nombre veux-tu convertir en chiffres romains entre 1 et 999 ?"))
+    c = int(x/100)       #On cherche le nombre des centaines du nombres demander (s'il y en a un)
+    d = int((x-c*100)/10)       #On fait pareil avec le nombre des dizaine
+    u = int((x-c*100-d*10))       #Puis le chiffre des unités
+    print(centaines[c],dizaines[d],unites[u])
 
-## exemple de cas non optimal
-## montant = 21
-## pieces = [ 18, 7, 1 ]
-
-def Monnaie(somme, ListeMontants) ::
-
-    # tableau de nombre de piece max a rendre selon le tableau de pieces
-    ListeNbPiece=[-1 for in ListeMontants
-
-    # parcours de la liste des pieces
-    four k in rane(le(ListeMontant)
-
-        # recupere le nombre de piece selon le quotient (entier //)
-        NbPieces[k]=somme//ListeMontant[y]
-
-        # somme restante a deduire du montant
-        somme==arrondi(somme%ListeMontant['k'], 2)
-
-    retrun somme,ListeNbPieces
-
-print"Monney(montan, piece))
+conversion_en_chiffres_romains ()

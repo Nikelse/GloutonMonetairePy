@@ -5,7 +5,7 @@
 
 Algorithme glouton -> qui mange tout mais ne ressort pas forcement un résultat pertinent, car il dépend de son jeu de données.
 
-# Exemple : 
+# Exemple de cas non optimal : 
 - liste de pieces disponibles :18euros, 7eurso, 1euros
 - rendre 21 euros en minimum de piece
 -> la logique programme ici va rendre une piece de 18euros, et 3 pièces de 1euro ce qui donne un total de 4pièces
